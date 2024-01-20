@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -9,7 +10,12 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center auto-rows-max">
         <div className="card w-96 bg-base-100 shadow-xl h-full">
           <figure className="h-48">
-            <img src="/project1.png" alt="project1" />
+            <Image
+              src="/project1.png"
+              alt="project 1"
+              width={300}
+              height={300}
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title  text-xl lg:text-xl font-extrabold tracking-tight uppercase">
@@ -35,7 +41,12 @@ export default function Projects() {
         </div>
         <div className="card w-96 bg-base-100 shadow-xl h-full">
           <figure className="h-48">
-            <img src="/project2.png" alt="project2" />
+            <Image
+              src="/project2.png"
+              height={300}
+              width={300}
+              alt="project2"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title  text-xl lg:text-xl font-extrabold tracking-tight uppercase">
@@ -47,7 +58,7 @@ export default function Projects() {
               </div>
             </h2>
             <p className="text-md lg:text-lg text-muted-foreground text-gray-400">
-              Elevate your institution's online presence with a meticulously
+              Elevate your institutions online presence with a meticulously
               crafted college website that seamlessly integrates information,
               engagement, and accessibility for students and stakeholders.
             </p>
@@ -59,7 +70,12 @@ export default function Projects() {
         </div>
         <div className="card w-96 bg-base-100 shadow-xl h-full">
           <figure className="h-48">
-            <img src="/project3.png" alt="project2" />
+            <Image
+              src="/project3.png"
+              height={300}
+              width={300}
+              alt="project2"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title  text-xl lg:text-xl font-extrabold tracking-tight uppercase">

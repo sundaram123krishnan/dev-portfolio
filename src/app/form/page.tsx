@@ -25,7 +25,7 @@ const formSchema = z.object({
 export default function SignUpForm() {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs

@@ -14,7 +14,7 @@ export default function RollOver() {
         align: "start",
         loop: true,
       }}
-      className="w-60"
+      className="w-64"
     >
       <CarouselContent>
         <CarouselItem className="flex flex-col gap-3">

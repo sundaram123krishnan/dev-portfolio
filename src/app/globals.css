@@ -26,6 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-canvas {
-  height: 100vh !important;
+html,
+body,
+div#__next,
+main {
+  @apply min-h-full h-full;
+  @apply overflow-x-hidden;
 }

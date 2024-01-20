@@ -1,6 +1,10 @@
-import Image from "next/image";
-import Cube from "./components/Cube";
+import App from "./components/App";
+import "../app/globals.css";
 
 export default function Home() {
-  return <Cube />;
+  return (
+    <div className="bg-black">
+      <App />
+    </div>
+  );
 }

@@ -58,7 +58,7 @@ export default function Navbar() {
               </li>
               <li className="uppercase">
                 <Link href="/resume">
-                  <p onClick={closeMenu}>Resume</p>
+                  <p onClick={closeMenu}>RESUME</p>
                 </Link>
               </li>
             </ul>
@@ -79,7 +79,7 @@ export default function Navbar() {
           <li className="uppercase">
             <Link href="/experiences">Experiences</Link>
           </li>
-          <li>
+          <li className="uppercase">
             <Link href="/resume">Resume</Link>
           </li>
         </ul>

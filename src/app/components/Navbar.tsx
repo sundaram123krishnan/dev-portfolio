@@ -40,7 +40,12 @@ export default function Navbar() {
             </svg>
           </div>
           {menuOpen && (
-            <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+            <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 bg-gray-500 text-white">
+              <li className="uppercase">
+                <Link href="/">
+                  <p onClick={closeMenu}>Home</p>
+                </Link>
+              </li>
               <li className="uppercase">
                 <Link href="/skills">
                   <p onClick={closeMenu}>Skills</p>
@@ -57,18 +62,22 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="uppercase">
-                <Link href="/resume">
+                <Link href="/Sundaram_Resume.pdf">
                   <p onClick={closeMenu}>RESUME</p>
                 </Link>
               </li>
             </ul>
           )}
         </div>
-        <a href="/" className="btn btn-ghost text-xl">
-          <span className="font-extrabold">{"</>"}</span>sundaram KRISHNAN
+        <a
+          href="/"
+          className="hidden  lg:block btn btn-ghost text-lg text-center py-2"
+        >
+          <span className="font-extrabold text-xl">{"</>"}</span>sundaram
+          KRISHNAN
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex ">
+      <div className="hidden lg:flex navbar-center">
         <ul className="menu menu-horizontal px-1">
           <li className="uppercase">
             <Link href="/skills">Skills</Link>
@@ -80,11 +89,11 @@ export default function Navbar() {
             <Link href="/experiences">Experiences</Link>
           </li>
           <li className="uppercase">
-            <Link href="/resume">Resume</Link>
+            <Link href="/Sundaram_Resume.pdf">Resume</Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end uppercase mr-2">
+      <div className="navbar-end uppercase mr-4">
         <Link href="/form">Contact Me</Link>
       </div>
     </div>

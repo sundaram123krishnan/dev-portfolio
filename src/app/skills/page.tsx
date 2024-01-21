@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function skills() {
   return (
-    <div className="flex flex-col gap-10 items-center justify-center bg-black py-10 ">
+    <div className="flex flex-col gap-10 items-center justify-center bg-black py-10 z-0">
       <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight text-center text-gray-400">
         Skills
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-center auto-rows-max">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-center auto-rows-max z-0">
         <div className="card w-96 bg-base-100 shadow-xl image-full h-72">
           <figure>
             <Image src="/java-script.png" width={300} height={300} alt="js" />
